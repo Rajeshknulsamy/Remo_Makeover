@@ -15,6 +15,9 @@ function App() {
     <div className='sm:text-left text-black md:text-green-400'>
       hey remo this is a  makeover project i do something different in doing that project because of this is a my 1st time effort of in this projects
     </div>
+    <div>
+      vicky
+    </div>
     </>
   )
 }
