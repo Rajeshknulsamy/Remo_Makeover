@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
-import './App.css'
+// import './App.css';
+import { BrowserRouter, Routes,Route } from 'react-router-dom';
+import Home from './Pages/Home';
+// import  Nav  from "./components/Nav";
 
 function App() {
 
@@ -9,15 +12,12 @@ function App() {
 
   return (
     <>
-     <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    <div className='sm:text-left text-black md:text-green-400'>
-      hey remo this is a  makeover project i do something different in doing that project because of this is a my 1st time effort of in this projects
-    </div>
-    <div>
-      vicky
-    </div>
+     <BrowserRouter>
+     <Routes>
+      <Route path='/' element={<Home />} />
+     </Routes>
+     
+     </BrowserRouter>
     </>
   )
 }
